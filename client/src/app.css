@@ -2,7 +2,9 @@
 *:after,
 *:before {
     box-sizing: border-box;
+    margin: 0;
 }
+
 .header {
     display: block;
 }
@@ -48,7 +50,7 @@
     background-color:hsla(0,0%,100%,.25);
     padding-top: 23px;
 }
-a .label{
+.label{
     position: relative;
     letter-spacing: .5px;
     text-transform: uppercase;
@@ -56,7 +58,7 @@ a .label{
     font-weight: 400px;
     font-size: 15px;
     margin: 0 3px;
-    color:white;
+
 }
 div {
     display: block;
@@ -86,7 +88,22 @@ div {
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    color: #ebedde;
+    color: #c8cbcc;
+}
+.newsletter {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Adihausbold';
+    color: #f1f1f1;
+}
+.newsletter:hover{
+    background: white;
+    color: black;
 }
 .spacer {
     height: 12px;
@@ -100,7 +117,7 @@ em {
     display: inline-block;
     color: white;
 }
-.a {
+em .a {
     color: #fff;
 }
 .loginspacer {
@@ -108,7 +125,8 @@ em {
 }
 .logo {
     width: 70px;
-    top: -15px;
+    height: 70px;
+    top: -23px;
     position: relative;
     transition-timing-function: cubic-bezier(.3,0,45,1);
     margin-right: 20px;
@@ -116,7 +134,7 @@ em {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url('https://cdn1.thecomeback.com/puckdrunklove/wp-content/uploads/sites/17/2014/01/AdidasNHL.jpg');
+    background-image: url('https://www.searchpng.com/wp-content/uploads/2019/01/Adidas-Logo-White-PNG-715x715.png');
     background-repeat: no-repeat;
     background-position: 0;
     background-size: contain;
@@ -140,8 +158,22 @@ em {
     font-weight: normal;
   }
   @font-face {
+    font-family: 'Adineuebold';
+    src: url('../assets/adineuePRO-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
     font-family: 'AdihausDIN';
     src: url('../assets/AdihausDIN-Regular.woff2') format('truetype');
     font-style: normal;
     font-weight: normal;
   }
+  @font-face {
+    font-family: 'Adihausbold';
+    src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+ 
