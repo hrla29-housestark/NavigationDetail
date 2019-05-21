@@ -16,7 +16,7 @@ class Top extends Component {
           <a className={style.customerinfo} href="#">ORDER TRACKER AND RETURNS</a>
           <div className={style.spacer}></div>
           <em>
-            <a className={style.customerinfo} href="#">NEWSLETTER SINGUP</a>
+            <a className={style.newsletter} href="#">NEWSLETTER SINGUP</a>
           </em>
           <div className={style.loginspacer} ></div>
           <a className={style.customerinfo} href="#">LOGIN</a>
