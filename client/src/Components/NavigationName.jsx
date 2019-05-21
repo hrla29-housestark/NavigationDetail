@@ -8,22 +8,22 @@ class NavigationName extends Component {
 
   render() {
     return (
-      <div className={style.mainmenu}>
-        <div className={style.name} >
-          <a className={style.label} >MEN</a>
+      <div className={style.mainmenu} >
+        <div className={style.name} onMouseEnter={() => this.props.changeView('men')} onMouseLeave={() => this.props.changeView('')}>
+          <p className={style.label} >MEN</p>
         </div>
-        <div className={style.name} >
-          <a className={style.label} >WOMEN</a>
+        <div className={style.name} onMouseOver={() => this.props.changeView('women')} onMouseLeave={() => this.props.changeView('')}>
+          <p className={style.label} >WOMEN</p>
         </div>
-        <div className={style.name}>
-          <a className={style.label} >KIDS</a>
+        <div className={style.name} onMouseOver={() => this.props.changeView('kids')} onMouseLeave={() => this.props.changeView('')} >
+          <p className={style.label} >KIDS</p>
         </div>
         <div className={style.namespacer}></div>
-        <div className={style.name} >
-          <a className={style.label} >SPORTS</a>
+        <div className={style.name} onMouseOver={() => this.props.changeView('sports')} onMouseLeave={() => this.props.changeView('')}>
+          <p className={style.label} >SPORTS</p>
         </div>
-        <div className={style.name} >
-          <a className={style.label} >BRANDS</a>
+        <div className={style.name} onMouseOver={() => this.props.changeView('brands')} onMouseLeave={() => this.props.changeView('')}>
+          <p className={style.label} >BRANDS</p>
         </div>
       </div>
 
