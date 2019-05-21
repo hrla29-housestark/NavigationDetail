@@ -1,0 +1,84 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin: 0;
+}
+.mainmain {
+  display: flex;
+  height: 600px;
+  background: transparent;
+}
+.maindropdown {
+  display: flex;
+  height: 460px;
+  background:transparent;
+  margin-left:80px;
+
+}
+ul {
+
+  list-style-type: none;
+  font-family: Adihausbold;
+  width: 140px;
+  font-size: 17px;
+  margin: 30px 10px 10px 40px;
+  padding: 0.5em;
+}
+li {
+  font-family: AdineuePRO; 
+  font-weight: normal;
+  margin: 10px 0 10px;
+}
+.seperator{
+  width: 16px;
+  height: 1px;
+  overflow: hidden;
+  margin: 0 0 11px;
+  background-color: #ccc;
+}
+.longseperator {
+  width: 140px;
+  height: 1px;
+  overflow: hidden;
+  margin: 0 0 11px;
+  background-color: #ccc;
+}
+.space {
+  height: 17px;
+  overflow: hidden;
+}
+a {
+  color: black;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline;
+}
+.special {
+  font-family: Adihausbold;
+}
+@font-face {
+  font-family: 'AdineuePRO';
+  src: url('../assets/adineuePRO-Regular.woff2') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Adineuebold';
+  src: url('../assets/adineuePRO-Bold.woff2') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'AdihausDIN';
+  src: url('../assets/AdihausDIN-Regular.woff2') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Adihausbold';
+  src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
