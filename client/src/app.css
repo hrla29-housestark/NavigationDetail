@@ -1,0 +1,179 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header {
+    display: block;
+}
+.main {
+    height: 48px;
+    background-color: black;
+    padding-top: 0;
+    display: flex;
+    color: white;
+
+}
+.inner {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+}
+.mainmenu {
+    flex: 1;
+}
+.name {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    margin-top: 3px;
+    background-color: black;
+    color:white;
+    user-select: none;
+}
+.name:hover {
+    background-color: white;
+    color: black;
+}
+.namespacer {
+    display: inline-block;
+    vertical-align: top;
+    width: 1px;
+    margin: 12px 3px;
+    background-color:hsla(0,0%,100%,.25);
+    padding-top: 23px;
+}
+.label{
+    position: relative;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-family: 'AdineuePRO',Helvetica,Arial,sans-serif;
+    font-weight: 400px;
+    font-size: 15px;
+    margin: 0 3px;
+
+}
+div {
+    display: block;
+}
+.headertop {
+    font-family: "AdihausDIN",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    display: block;
+    background: linear-gradient(90deg,#000 30%,transparent 50%),linear-gradient(180deg,#000 0,#363738);
+}
+.headerinner {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    height: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.customerinfo {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    color: #c8cbcc;
+}
+.newsletter {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Adihausbold';
+    color: #f1f1f1;
+}
+.newsletter:hover{
+    background: white;
+    color: black;
+}
+.spacer {
+    height: 12px;
+    width: 1px;
+    position: relative;
+    top: -1px;
+    background-color: #767677;
+}
+em {
+    font-weight: 700;
+    display: inline-block;
+    color: white;
+}
+em .a {
+    color: #fff;
+}
+.loginspacer {
+    display: none;
+}
+.logo {
+    width: 70px;
+    height: 70px;
+    top: -23px;
+    position: relative;
+    transition-timing-function: cubic-bezier(.3,0,45,1);
+    margin-right: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url('https://www.searchpng.com/wp-content/uploads/2019/01/Adidas-Logo-White-PNG-715x715.png');
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: contain;
+    transform-origin: 0 25px;
+    transition: width .45s,transform .45s cubic-bezier(0,.7,.6,1);
+}
+.only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+@font-face {
+    font-family: 'AdineuePRO';
+    src: url('../assets/adineuePRO-Regular.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Adineuebold';
+    src: url('../assets/adineuePRO-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'AdihausDIN';
+    src: url('../assets/AdihausDIN-Regular.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Adihausbold';
+    src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+ 
