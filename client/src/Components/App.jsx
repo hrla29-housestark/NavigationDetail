@@ -7,6 +7,7 @@ import DropDownWomen from './DropDownWomen.jsx';
 import DropDownKid from './DropDownKid.jsx';
 import DropDownSports from './DropDownSports.jsx'
 import NewsletterSignUp from './NewsletterSignUp.jsx';
+import DropDownBrands from './DropDownBrands.jsx';
 
 
 class App extends Component {
@@ -40,7 +41,10 @@ class App extends Component {
       return <DropDownKid changeView={this.changeView}/>;
     }else if(view === "sports"){
       return <DropDownSports changeView={this.changeView}/>;
-    }else{
+    }else if(view === "brands"){
+      return <DropDownBrands changeView={this.changeView}/>;
+    }
+    else{
       return;
     }
   }
@@ -61,9 +65,7 @@ class App extends Component {
             </a> : <a className={style.logo}>
             <span className={style.only}>adidas</span>
             </a>}
-            {/* <a className={style.logo}>
-            <span className={style.only}>adidas</span>
-            </a> */}
+
             <NavigationName changeView={this.changeView} />
             <div>Search</div>
             <div>Shopping Cart</div>
