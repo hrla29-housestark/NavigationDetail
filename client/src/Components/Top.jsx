@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import style from '../app.css'
 
 class Top extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
   }
 
 
@@ -15,8 +15,8 @@ class Top extends Component {
           <div className={style.spacer}></div>
           <a className={style.customerinfo} href="#">ORDER TRACKER AND RETURNS</a>
           <div className={style.spacer}></div>
-          <em>
-            <a className={style.newsletter} href="#">NEWSLETTER SINGUP</a>
+          <em onClick={() => this.props.handleSignUp()}>
+            <a className={style.newsletter} href="#" >NEWSLETTER SINGUP</a>
           </em>
           <div className={style.loginspacer} ></div>
           <a className={style.customerinfo} href="#">LOGIN</a>
