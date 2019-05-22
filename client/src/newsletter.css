@@ -1,0 +1,210 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: AdineuePRO ,Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+}
+.newspaperMain {
+  height: 266px;
+}
+.newspaperLine1 {
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 91px;
+  display: flex;
+}
+.subscribe {
+  border-bottom: 1px solid #767677;
+  width: 33%;
+  display:flex;
+  justify-content: center;
+}
+.innerSubscribe {
+  display:flex;
+  padding: 25px 30px;
+  justify-content: center;
+}
+.rootSubscribe {
+  display: flex;
+  width: 215px;
+  height: 38px;
+  font-size: 14px;
+  
+}
+span img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 18px;
+}
+.part2 {
+  height: 135px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.emailInputSection {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+}
+.innerEmail {
+  position: relative;
+  margin-bottom: 0;
+  
+}
+.inputEmail {
+  color: #000;
+  border: 1.01565px solid #767677;
+  width: 240px;
+  height:50px
+}
+.labelInput{
+  position: absolute;
+  left: 17px;
+  top: 14px;
+  letter-spacing: 1px;
+}
+.spanLabelInput {
+  color: red;
+}
+.divEmail {
+  position: absolute;
+  color: #767677;
+  left: 25px;
+  font-size:14px;
+  margin-top: 5px;
+}
+.ageSection {
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 302px;
+}
+.ageRow {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.ageRow1 {
+  position: relative;
+}
+.checkboxLabel {
+  display: flex;
+  line-height: 75px; 
+  align-items: center;
+  position: relative;
+  margin-bottom:0;
+}
+.inputCheckBox {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  margin: 0 5px 0 0;
+}
+.spanCheckBox {
+  font-size: 1em;
+  cursor: pointer;
+}
+.buttonCheckBox {
+  width: 20px;
+  height: 25px; 
+  font-weight: bold;
+  font-size: 17px;
+  background-color: #ebedee;
+  color: black;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.radioMenu {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-rigth: 20px;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+  width: 241px;
+}
+.genderLabel {
+  margin-bottom: 10px;
+}
+.radioInput {
+  margin-right: 5px;
+}
+.radioButtons {
+  display:flex;
+  margin-bottom: 15px;
+  cursor: pointer;
+  
+}
+.radio {
+  margin-right: 15px;
+  font-size: 1em;
+}
+.signup {
+  padding-left: 20px;
+  padding-rigth: 20px;
+
+}
+.signup button {
+  cursor: pointer;
+  width: auto;
+  padding: 0 20px;
+  text-transform: UpperCase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  background-color: black;
+  color:white;
+  height: 50px;
+  width: 147px;
+}
+.icon {
+  display: inline-block;
+  height: 24px;
+  vertical-align: text-top;
+  width: 24px;
+}
+footer {
+  height: 60px;
+  padding-bottom: 20px;
+  clear: both;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #767677;
+  max-width: 1280px;
+  font-size: 14px;
+  line-height:20px;
+  font-family: Helvetica;
+}
+span a {
+  color:black;
+}
+
+@font-face {
+  font-family: 'AdineuePRO';
+  src: url('../assets/adineuePRO-Regular.woff2') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Adineuebold';
+  src: url('../assets/adineuePRO-Bold.woff2') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'AdihausDIN';
+  src: url('../assets/AdihausDIN-Regular.woff2') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Adihausbold';
+  src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
