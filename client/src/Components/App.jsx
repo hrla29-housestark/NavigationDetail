@@ -8,6 +8,7 @@ import DropDownKid from './DropDownKid.jsx';
 import DropDownSports from './DropDownSports.jsx'
 import NewsletterSignUp from './NewsletterSignUp.jsx';
 import DropDownBrands from './DropDownBrands.jsx';
+import Search from './Search.jsx';
 
 
 class App extends Component {
@@ -67,8 +68,8 @@ class App extends Component {
             </a>}
 
             <NavigationName changeView={this.changeView} />
-            <div>Search</div>
-            <div>Shopping Cart</div>
+            <Search />
+            <div>Cart</div>
           </div>
         </div>
         {this.rendering()}
