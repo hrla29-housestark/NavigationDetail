@@ -169,6 +169,60 @@ em .a {
     white-space: nowrap;
     width: 1px;
 }
+.searchMain {
+    position:relative;
+  }
+  .searchWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    margin-top: 4px;
+  }
+  .activeSearchWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 237px;
+    height: 40px;
+    margin-top: 4px;
+  }
+  .searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:black;
+    background-color:white;
+    width: 30px;
+    height: 32px;
+    
+  }
+  .formSearch {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .inputSearch {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 0;
+    background-color: white;
+    height: 32px;
+    font-size: 14px;
+  }
+  .inputCross {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color:black;
+    background-color:white;
+    font-size:23px;
+    width: 30px;
+    height: 32px;
+    cursor: pointer;
+  }
 @font-face {
     font-family: 'AdineuePRO';
     src: url('../assets/adineuePRO-Regular.woff2') format('truetype');
