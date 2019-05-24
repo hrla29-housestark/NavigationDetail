@@ -223,6 +223,12 @@ em .a {
     height: 32px;
     cursor: pointer;
   }
+  .deneme {
+      background-color: red;
+      border: 1px solid white;
+      width: 100px;
+      height: 40px;
+  }
 @font-face {
     font-family: 'AdineuePRO';
     src: url('../assets/adineuePRO-Regular.woff2') format('truetype');
