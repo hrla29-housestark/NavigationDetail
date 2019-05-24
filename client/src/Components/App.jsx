@@ -66,7 +66,7 @@ class App extends Component {
       filterCategory.push({category: product.category, productNumber: product.productNumber})
     });
     if(q.length > 2 && view ==='' && filterProducts.length > 0){
-      return <DropDownSearch products={filterProducts.slice(0,4)} categories={filterCategory} q={this.state.q}/>
+      return <DropDownSearch products={filterProducts.slice(0,4)} categories={filterCategory.slice(0,7)} q={this.state.q}/>
     }else {
       return;
     }
