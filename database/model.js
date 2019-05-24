@@ -1,5 +1,8 @@
 const mongoose = require('mongoose')
 const db = require('./index.js')
+
+mongoose.Promise = global.Promise;
+
 const navigationSchema = new mongoose.Schema({
    productID: Number,
    productType: String,
