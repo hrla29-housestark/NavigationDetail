@@ -19,6 +19,7 @@ app.get('/api/nav', (req,res) => {
 })
 
 
+
 app.listen(port, () => console.log(`Listening port ${port}`))
 
 
@@ -40,7 +41,7 @@ app.listen(port, () => console.log(`Listening port ${port}`))
 // app.delete('/api/nav', (req, res) => {
 //     const { productType } = req.query;
 //     console.log(req.query)
-//     Product.deleteOne({productType: productType})
+//     Product.deleteMany()
 //         .then(() => res.status(201).send('Succesfully deleted'))
 //         .catch(err => res.status(404).send('Error deleting',err))
 // })
