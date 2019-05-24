@@ -1,0 +1,89 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+.searchMainDropDown {
+    position: absolute;
+    margin-left: 650px;
+    width: 627px;
+    height: 459px;
+    box-shadow: 0 12px 24px rgba(0,0,0,.1);
+    padding: 20px 30px;
+  }
+  .searchRow {
+    display: flex; 
+  }
+  .searchColumn1 {
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .suggestions {
+    padding-bottom: 30px;
+    list-style-type: none;
+    padding: 0;
+  }
+  .headingLabel {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 14px;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+  .suggestionLabel {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 14px;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+  }
+  .labelSpan {
+    margin-left: 5px;
+  }
+  .seeAll {
+    cursor: pointer;
+    margin-top: auto;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  .searchColumn2 {
+    display:flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+  .products {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .productHeadingLabel {
+    font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 14px;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+  .productDescription {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 8px
+  }
+  .productProperty {
+    display: flex;
+    flex-direction: column;
+  }
+  .spanProperty {
+    color: #767677;
+    margin-left: 10px;
+  }
+  .strong {
+    color:red;
+    font-weight: bold;
+  }
