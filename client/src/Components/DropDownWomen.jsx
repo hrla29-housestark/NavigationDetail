@@ -12,90 +12,90 @@ class DropDownWomen extends Component{
             <div className={style.mainmain} onMouseEnter={() => this.props.changeView('women')} onMouseLeave={() => this.props.changeView('')} >
               
               <div className={style.maindropdown} >
-                <ul>
+                <ul className={style.ulDropDown}>
                     FEATURED
-                    <li><a href="#" >New Arrivals</a></li>
-                    <li><a href="#" >Best Sellers</a></li>
-                    <li><a href="#" >Release Dates</a></li>
+                    <li className={style.liDropDown}><a href="#" >New Arrivals</a></li>
+                    <li className={style.liDropDown}><a href="#" >Best Sellers</a></li>
+                    <li className={style.liDropDown}><a href="#" >Release Dates</a></li>
                     <li className="space"></li>
                     <li className={style.seperator}>&nbsb;</li>
-                    <li><a href="#" >YEEZY</a></li>
-                    <li><a href="#" >Nite Jogger</a></li>
-                    <li><a href="#" >Ultraboost</a></li>
-                    <li><a href="#" >NMD</a></li>
+                    <li className={style.liDropDown}><a href="#" >YEEZY</a></li>
+                    <li className={style.liDropDown}><a href="#" >Nite Jogger</a></li>
+                    <li className={style.liDropDown}><a href="#" >Ultraboost</a></li>
+                    <li className={style.liDropDown}><a href="#" >NMD</a></li>
                     <li className={style.space}></li>
                     <li className={style.seperator}>&nbsb;</li>
-                    <li><a href="#" className={style.special}>Sale</a></li>
-                    <li><a href="#"className={style.special} >3 Stripe Promotion</a></li>
-                    <li><a href="#" ><img src="https://www.adidas.com/on/demandware.static/-/Sites-adidas-US-Library/en_US/dw9bb3173d/_other/_navigation/30_off_3.jpg" width="172" height="80" ></img></a></li>
+                    <li className={style.liDropDown}><a href="#" className={style.special}>Sale</a></li>
+                    <li className={style.liDropDown}><a href="#"className={style.special} >3 Stripe Promotion</a></li>
+                    <li className={style.liDropDown}><a href="#" ><img src="https://www.adidas.com/on/demandware.static/-/Sites-adidas-US-Library/en_US/dw9bb3173d/_other/_navigation/30_off_3.jpg" width="172" height="80" ></img></a></li>
                     <li className={style.seperator}>&nbsb;</li>
                     
                     
                 </ul>
                 
-                <ul>
+                <ul className={style.ulDropDown}>
                     SHOES
-                    <li><a href="#" >Originals </a></li>
-                    <li><a href="#" >Running</a></li>
-                    <li><a href="#" >Workout</a></li>
-                    <li><a href="#" >Basketball</a></li>
-                    <li><a href="#" >Essentials</a></li>
-                    <li><a href="#" >Sandals & Slides</a></li>
-                    <li><a href="#" >Hiking</a></li>
-                    <li><a href="#" >Tennis</a></li>
-                    <li><a href="#" >Golf</a></li>
-                    <li><a href="#" >Soccer</a></li>
-                    <li><a href="#" >Voleyball</a></li>
-                    <li><a href="#" >Sale Shoes</a></li>
+                    <li className={style.liDropDown}><a href="#" >Originals </a></li>
+                    <li className={style.liDropDown}><a href="#" >Running</a></li>
+                    <li className={style.liDropDown}><a href="#" >Workout</a></li>
+                    <li className={style.liDropDown}><a href="#" >Basketball</a></li>
+                    <li className={style.liDropDown}><a href="#" >Essentials</a></li>
+                    <li className={style.liDropDown}><a href="#" >Sandals & Slides</a></li>
+                    <li className={style.liDropDown}><a href="#" >Hiking</a></li>
+                    <li className={style.liDropDown}><a href="#" >Tennis</a></li>
+                    <li className={style.liDropDown}><a href="#" >Golf</a></li>
+                    <li className={style.liDropDown}><a href="#" >Soccer</a></li>
+                    <li className={style.liDropDown}><a href="#" >Voleyball</a></li>
+                    <li className={style.liDropDown}><a href="#" >Sale Shoes</a></li>
                 </ul>
                 
-                <ul>
+                <ul className={style.ulDropDown}>
                 CLOTHING
-                    <li><a href="#" >Hoodies & Sweatshirts</a></li>
-                    <li><a href="#" >Pants</a></li>
-                    <li><a href="#" >Leggings & Tights</a></li>
-                    <li><a href="#" >Sports Bras</a></li>
-                    <li><a href="#" >Track Suits</a></li>
-                    <li><a href="#" >Jackets & Vests</a></li>
-                    <li><a href="#" >Short Sleeve Shirts</a></li>
-                    <li><a href="#" >Long Sleeve Shirts</a></li>
-                    <li><a href="#" >Dresses & Skirts</a></li>
-                    <li><a href="#" >Shorts</a></li>
-                    <li><a href="#" >Tank Tops</a></li>
-                    <li><a href="#" >Sale Apparel</a></li>
+                    <li className={style.liDropDown}><a href="#" >Hoodies & Sweatshirts</a></li>
+                    <li className={style.liDropDown}><a href="#" >Pants</a></li>
+                    <li className={style.liDropDown}><a href="#" >Leggings & Tights</a></li>
+                    <li className={style.liDropDown}><a href="#" >Sports Bras</a></li>
+                    <li className={style.liDropDown}><a href="#" >Track Suits</a></li>
+                    <li className={style.liDropDown}><a href="#" >Jackets & Vests</a></li>
+                    <li className={style.liDropDown}><a href="#" >Short Sleeve Shirts</a></li>
+                    <li className={style.liDropDown}><a href="#" >Long Sleeve Shirts</a></li>
+                    <li className={style.liDropDown}><a href="#" >Dresses & Skirts</a></li>
+                    <li className={style.liDropDown}><a href="#" >Shorts</a></li>
+                    <li className={style.liDropDown}><a href="#" >Tank Tops</a></li>
+                    <li className={style.liDropDown}><a href="#" >Sale Apparel</a></li>
                     
                 </ul>
             
-                    <ul>
+                    <ul className={style.ulDropDown}>
                     ACCESSORIES
-                    <li><a href="#" >Bags & Backpacks</a></li>
-                    <li><a href="#" >Hats & Beanies</a></li>
-                    <li><a href="#" >Socks</a></li>
-                    <li><a href="#" >Phone Cases</a></li>
-                    <li><a href="#" >Sunglasses</a></li>
-                    <li><a href="#" >Balls</a></li>
-                    <li><a href="#" >Watches</a></li>
-                    <li><a href="#" >Gloves</a></li>
-                    <li><a href="#" >All Accessories</a></li>
-                    <li><a href="#" >Sale Accessories</a></li>
+                    <li className={style.liDropDown}><a href="#" >Bags & Backpacks</a></li>
+                    <li className={style.liDropDown}><a href="#" >Hats & Beanies</a></li>
+                    <li className={style.liDropDown}><a href="#" >Socks</a></li>
+                    <li className={style.liDropDown}><a href="#" >Phone Cases</a></li>
+                    <li className={style.liDropDown}><a href="#" >Sunglasses</a></li>
+                    <li className={style.liDropDown}><a href="#" >Balls</a></li>
+                    <li className={style.liDropDown}><a href="#" >Watches</a></li>
+                    <li className={style.liDropDown}><a href="#" >Gloves</a></li>
+                    <li className={style.liDropDown}><a href="#" >All Accessories</a></li>
+                    <li className={style.liDropDown}><a href="#" >Sale Accessories</a></li>
 
                 </ul>
                 
-                <ul>
+                <ul className={style.ulDropDown}>
                     SPORTS
-                    <li><a href="#" >Running</a></li>
-                    <li><a href="#" >Training</a></li>
-                    <li><a href="#" >Basketball</a></li>
-                    <li><a href="#" >Outdoor</a></li>
-                    <li><a href="#" >Tennis</a></li>
-                    <li><a href="#" >Golf</a></li>
-                    <li><a href="#" >Soccer</a></li>
-                    <li><a href="#" >Volleyball</a></li>
-                    <li><a href="#" >Skateboarding</a></li>
-                    <li><a href="#" >Yoga</a></li>
-                    <li><a href="#" >Lacrosse</a></li>
-                    <li><a href="#" >Hockey</a></li>
-                    <li><a href="#" >College Gear</a></li>
+                    <li className={style.liDropDown}><a href="#" >Running</a></li>
+                    <li className={style.liDropDown}><a href="#" >Training</a></li>
+                    <li className={style.liDropDown}><a href="#" >Basketball</a></li>
+                    <li className={style.liDropDown}><a href="#" >Outdoor</a></li>
+                    <li className={style.liDropDown}><a href="#" >Tennis</a></li>
+                    <li className={style.liDropDown}><a href="#" >Golf</a></li>
+                    <li className={style.liDropDown}><a href="#" >Soccer</a></li>
+                    <li className={style.liDropDown}><a href="#" >Volleyball</a></li>
+                    <li className={style.liDropDown}><a href="#" >Skateboarding</a></li>
+                    <li className={style.liDropDown}><a href="#" >Yoga</a></li>
+                    <li className={style.liDropDown}><a href="#" >Lacrosse</a></li>
+                    <li className={style.liDropDown}><a href="#" >Hockey</a></li>
+                    <li className={style.liDropDown}><a href="#" >College Gear</a></li>
 
                 </ul>
 

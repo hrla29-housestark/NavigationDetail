@@ -1,18 +1,22 @@
 const mongoose = require('mongoose')
+const db = require('./index.js')
+
+mongoose.Promise = global.Promise;
 
 const navigationSchema = new mongoose.Schema({
-   productId: Number,
-   type: String,
-   name: String,
+   productID: Number,
+   productType: String,
+   productName: String,
    imageUrl: String,
    rating: Number,
    comments: Number,
-   price: String,
-   category: String
+   price: Number,
+   category: String,
+   productNumber: Number
 })
 
 
-const Product = mongoose.model('products',navigationSchema)
+const Product = mongoose.model('Product',navigationSchema)
 
-module.exports = Product;
+module.exports= Product;
 

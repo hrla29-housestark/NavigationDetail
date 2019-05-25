@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import DropDownSearch from './DropDownSearch.jsx'
 import style from '../app.css'
 class Search extends Component {
   constructor() {
@@ -6,6 +7,7 @@ class Search extends Component {
     this.state ={
       active: false,
       search:''
+
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -19,14 +21,13 @@ class Search extends Component {
   handleChange(event){
     this.setState({
       search: event.target.value
-    })
+    },() =>this.props.handleSearchChange(this.state.search))
   }
   handleCross(){
     this.setState({
       search:''
-    })
+    },() =>this.props.handleSearchChange(this.state.search))
   }
-
 
 
   render() {
@@ -39,7 +40,7 @@ class Search extends Component {
           <form className={style.formSearch} onClick={() => this.handleClick()}>
             <input className={style.inputSearch} placeholder="search" value={this.state.search} onChange={this.handleChange}/>
           </form>
-          {this.state.search.length > 0 ? <div className={style.inputCross} onClick={() => this.handleCross()} >X</div> : <div className={style.inputCross}></div>}
+          {this.state.search.length > 0 ? <div className={style.inputCross} onClick={() => {this.handleCross(); this.handleClick()}} >X</div> : <div className={style.inputCross}></div>}
         </div>
       </div>
     )

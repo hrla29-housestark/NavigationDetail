@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/navigation')
+var db = mongoose.connect('mongodb://localhost/Product',{useNewUrlParser: true})
 
 
 //Testing database connection
@@ -10,3 +10,4 @@ db.once('open', () => {
     console.log('Succesfully connected to database')
 })
 
+module.exports = db;
