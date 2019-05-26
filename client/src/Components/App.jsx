@@ -11,7 +11,8 @@ import DropDownBrands from './DropDownBrands.jsx';
 import Search from './Search.jsx';
 import DropDownSearch from './DropDownSearch.jsx'
 import axios from 'axios'
-
+import FreeShippingAndReturns from './FreeShippingAndReturns.jsx';
+import Bottom from './Bottom.jsx'
 
 class App extends Component {
   constructor() {
@@ -20,12 +21,14 @@ class App extends Component {
       products:[],
       view: "",
       signUp: false,
-      q:''
+      q:'',
+      shipping: false
     }
     this.changeView = this.changeView.bind(this);
     this.handleSignUp = this.handleSignUp.bind(this);
     this.handleSearchChange = this.handleSearchChange.bind(this);
     this.fetchProducts = this.fetchProducts.bind(this);
+    this.handleFreeShipping = this.handleFreeShipping.bind(this);
   }
   componentDidMount(){
     this.fetchProducts();
@@ -71,6 +74,12 @@ class App extends Component {
       return;
     }
   }
+  handleFreeShipping(){
+    this.setState({
+      shipping: !this.state.shipping,
+      q:''
+    })
+  }
 
   rendering(){
     const { view } = this.state;
@@ -112,11 +121,18 @@ class App extends Component {
             <Search handleSearchChange={this.handleSearchChange}/>
             <div>Cart</div>
           </div>
-        </div>  
-          {this.rendering()}
-          {this.renderSearch()}
+        </div> 
+        {this.state.view === "" && !this.state.signUp ? <Bottom  handleFreeShipping ={this.handleFreeShipping}  /> : ''}
+        {this.rendering()}
+        {this.renderSearch()}
+        {this.state.shipping ?  <FreeShippingAndReturns handleFreeShipping={this.handleFreeShipping} /> : ''}
+        
+        
           
       </div>
+      
+      
+   
 
     )
   }

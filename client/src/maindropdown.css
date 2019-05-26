@@ -7,7 +7,7 @@
 .mainmain {
   display: flex;
   height: 600px;
-  background: transparent;
+  background: white;
 }
 .maindropdown {
   display: flex;

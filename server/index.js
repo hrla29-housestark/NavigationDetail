@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
 const Product = require('../database/model.js')
-const port = 3000;
+const port = 3001;
 
 const app = express();
 
@@ -19,29 +19,6 @@ app.get('/api/nav', (req,res) => {
 })
 
 
-
 app.listen(port, () => console.log(`Listening port ${port}`))
 
 
-
-
-
-
-
-
-// app.post('/api/nav', (req, res) => {
-//     const {productID, productType,productName, imageUrl, rating,
-//          comments, price, category, productNumber} = req.body;
-//          Product.create({productID: productID, productType: productType,productName: productName, imageUrl: imageUrl, rating:rating ,
-//             comments: comments, price:price, category:category, productNumber: productNumber })
-//             .then(() => res.status(201).send('Succesfully  Posted'))
-//             .catch(err => res.status(404).send('Error posting',err))
-// })
-
-// app.delete('/api/nav', (req, res) => {
-//     const { productType } = req.query;
-//     console.log(req.query)
-//     Product.deleteMany()
-//         .then(() => res.status(201).send('Succesfully deleted'))
-//         .catch(err => res.status(404).send('Error deleting',err))
-// })
