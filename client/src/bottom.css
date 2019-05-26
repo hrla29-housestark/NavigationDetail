@@ -1,0 +1,38 @@
+.bottomMain {
+    display:flex;
+    width: 100%;
+    background-color:white;
+    padding-right: 0;
+    border-bottom: 1px solid #c8cbcc;
+    position: absolute;
+    left:0;
+    right:0;
+  }
+  .bottomInnerMain {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    height: 40px;
+  }
+  .bottomFirst {
+    display:flex;
+    padding: 0 10px;
+    margin-top: 8px;
+  }
+  .carIcon {
+    width: 19px;
+    height: 19px;
+    margin-right: 2px;
+  }
+  .itemName {
+    font-size: 14px;
+    cursor: pointer;
+  
+  }
+  .itemName:hover {
+    text-decoration: underline;
+  }
+  .imgBottomFirst {
+    width: 24px;
+    height: 24px;
+  }
