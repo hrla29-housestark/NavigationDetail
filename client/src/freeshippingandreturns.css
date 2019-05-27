@@ -15,17 +15,18 @@
     width: 100%;
 }
 .fadeIn {
-	-webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  font-family: Arial, Helvetica, sans-serif;
+	-webkit-animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   border: 1px solid black;
-  width: 650px;
+  width: 50%;
   margin: 70px auto;
   background-color: white;
   
 }
 .fadeInCross {
   position: relative;
-  left:630px;
+  left:97%;
   bottom:10px;
   border: 1px solid black;
   height: 34px;
@@ -54,11 +55,19 @@
   border-bottom: 1px solid #000;
   border-left: 1px solid #000;
   padding: 20px 15px;
-  font-size: 26px;
-  
+  margin-top: -37px;
 }
+.h5Header {
+  margin-bottom: 20px;
+  font-size: 26px;
+
+}
+
 .body {
   font-size: 14px;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  line-height: 22px;
 }
 .shippingHeader {
   font-size: 26px;

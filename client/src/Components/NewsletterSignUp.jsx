@@ -86,8 +86,8 @@ class NewsletterSignUp extends Component {
               </div>
               <div className={style.signup}>
                 <button type="button">Sign up
-                  <svg className={style.icon}>
-                    <path stroke="white" store-width="1" d="M1 8 H100" />
+                  <svg className={style.icon} viewBox="0 0 24 24" width="100%" height="100%">
+                    <path d="M17.59 7l5 5-5 5M0 12h22" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="1"></path>
                   </svg>
                 </button>
               </div>

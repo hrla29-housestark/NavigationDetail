@@ -11,9 +11,9 @@ const FreeShippingAndReturns = (props) => {
                         <path d="M17 4l-8 8 8 8M1 4l8 8-8 8" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></path>
                     </svg>
                 </button>
-                <div className={style.model}><h5>FREE SHIPPING AND FREE RETURNS</h5>
+                <div className={style.model}><h5 className={style.h5Header}>FREE SHIPPING AND FREE RETURNS</h5>
                     <div>
-                        <div><p >FREE SHIPPING, FREE RETURNS</p>
+                        <div><p className={style.body} >FREE SHIPPING, FREE RETURNS</p>
                             <p className={style.body}>This limited time free shipping offer is good for free shipping, discount applied at checkout. See delivery method in checkout for estimated delivery date. Offer does not apply to adidas gift cards and mi adidas customizations. Valid on domestic U.S. orders only. adidas reserves the right to change or end promotions at any time.</p>
                             <p className={style.body}>If you are not completely satisfied with your adidas.com purchase, for any reason, we will offer you a free return within 30 days of purchase. *Some restrictions apply.</p>
                             <p className={style.body}>*Because personalized products are made just for you, they are not returnable.</p>

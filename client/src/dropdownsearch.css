@@ -1,9 +1,6 @@
-*,
-*:before,
-*:after{
-  box-sizing: border-box;
-}
+
 .searchMainDropDown {
+    font-family: 'AdihausDIN',Arial, Helvetica, sans-serif;
     position: absolute;
     margin-left: 650px;
     width: 627px;
@@ -72,6 +69,7 @@
       font-weight: bold;
   }
   .productDescription {
+    
     display: flex;
     cursor: pointer;
     margin-bottom: 8px
@@ -83,12 +81,16 @@
     line-height: 14px;
   }
   .spanProperty {
+    text-transform: capitalize;
     color: #767677;
     margin-left: 10px;
   }
+  .spanPropertyName {
+    color: #000000;
+    margin-left: 10px;
+  }
   .strong {
-    color:red;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .stars {
     position: relative;
@@ -117,3 +119,27 @@
    .fullStars:before {
     -webkit-text-stroke: 1px black;
    } 
+   @font-face {
+    font-family: 'AdineuePRO';
+    src: url('../assets/adineuePRO-Regular.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Adineuebold';
+    src: url('../assets/adineuePRO-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'AdihausDIN';
+    src: url('../assets/AdihausDIN-Regular.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Adihausbold';
+    src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
