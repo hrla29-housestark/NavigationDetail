@@ -13,6 +13,8 @@ import DropDownSearch from './DropDownSearch.jsx'
 import axios from 'axios'
 import FreeShippingAndReturns from './FreeShippingAndReturns.jsx';
 import Bottom from './Bottom.jsx'
+import ShoppingCart from './ShoppingCart.jsx';
+import Logo from './Logo.jsx';
 
 class App extends Component {
   constructor() {
@@ -111,15 +113,10 @@ class App extends Component {
         {this.state.signUp ? <NewsletterSignUp /> : ""}
         <div className={style.main}>
           <div className={style.inner}>
-          {this.state.signUp ? <a className={style.active}>
-            <span className={style.only}>adidas</span>
-            </a> : <a className={style.logo}>
-            <span className={style.only}>adidas</span>
-            </a>}
-
+            <Logo signUp={this.state.signUp}/>
             <NavigationName changeView={this.changeView} />
             <Search handleSearchChange={this.handleSearchChange}/>
-            <div>Cart</div>
+            <ShoppingCart />
           </div>
         </div> 
         {this.state.view === "" && !this.state.signUp ? <Bottom  handleFreeShipping ={this.handleFreeShipping}  /> : ''}
@@ -127,12 +124,7 @@ class App extends Component {
         {this.renderSearch()}
         {this.state.shipping ?  <FreeShippingAndReturns handleFreeShipping={this.handleFreeShipping} /> : ''}
         
-        
-          
       </div>
-      
-      
-   
 
     )
   }
