@@ -106,7 +106,6 @@
     white-space: nowrap;
     overflow: hidden;
     color: #B9B3B3;
-    width: 75%;
    }
    
    .emptyStars:before, .fullStars:before {
