@@ -121,7 +121,7 @@ em .a {
 .logo {
     width: 70px;
     height: 70px;
-    top: -23px;
+    top: -26px;
     position: relative;
     transition-timing-function: cubic-bezier(.3,0,45,1);
     margin-right: 20px;
@@ -129,7 +129,7 @@ em .a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url('https://www.searchpng.com/wp-content/uploads/2019/01/Adidas-Logo-White-PNG-715x715.png');
+    background-image: url('https://files.slack.com/files-pri/T2SV1LBC6-FJPT9FUHH/svgexport-2.jpg');
     background-repeat: no-repeat;
     background-position: 0;
     background-size: contain;
@@ -137,9 +137,9 @@ em .a {
     transition: width .45s,transform .45s cubic-bezier(0,.7,.6,1);
 }
 .active {
-    width: 53px;
+    width: 50px;
     height: 70px;
-    top: -8px;
+    top: -11px;
     position: relative;
     transition-timing-function: cubic-bezier(.3,0,45,1);
     margin-right: 20px;
@@ -147,7 +147,7 @@ em .a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url('https://www.searchpng.com/wp-content/uploads/2019/01/Adidas-Logo-White-PNG-715x715.png');
+    background-image: url('https://files.slack.com/files-pri/T2SV1LBC6-FJPT9FUHH/svgexport-2.jpg');
     background-repeat: no-repeat;
     background-position: 0;
     background-size: contain;
@@ -270,6 +270,10 @@ em .a {
     text-align: center;
     background-color: white;
     box-shadow: 0 12px 24px rgba(0,0,0,.1);
+  }
+  .delete {
+      position: absolute;
+      top:120px;
   }
 @font-face {
     font-family: 'AdineuePRO';

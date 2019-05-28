@@ -24,13 +24,15 @@ class App extends Component {
       view: "",
       signUp: false,
       q:'',
-      shipping: false
+      shipping: false,
+      check: true
     }
     this.changeView = this.changeView.bind(this);
     this.handleSignUp = this.handleSignUp.bind(this);
     this.handleSearchChange = this.handleSearchChange.bind(this);
     this.fetchProducts = this.fetchProducts.bind(this);
     this.handleFreeShipping = this.handleFreeShipping.bind(this);
+    this.changeCheckBox = this.changeCheckBox.bind(this);
   }
   componentDidMount(){
     this.fetchProducts();
@@ -46,6 +48,12 @@ class App extends Component {
       })
       .catch(err => console.log('Error getting data',err))
   }
+  changeCheckBox() {
+    this.setState({
+      check: !this.state.check 
+    })
+  }
+
   changeView(option){
     this.setState({
       view: option
@@ -106,11 +114,14 @@ class App extends Component {
 
   render() {
     return (
+      <div>
+
+     
       <div className={style.header}>
         <div>
           <Top handleSignUp={this.handleSignUp}/>
         </div>
-        {this.state.signUp ? <NewsletterSignUp /> : ""}
+        {this.state.signUp ? <NewsletterSignUp changeCheckBox={this.changeCheckBox} check={this.state.check}/> : ""}
         <div className={style.main}>
           <div className={style.inner}>
             <Logo signUp={this.state.signUp}/>
@@ -123,9 +134,9 @@ class App extends Component {
         {this.rendering()}
         {this.renderSearch()}
         {this.state.shipping ?  <FreeShippingAndReturns handleFreeShipping={this.handleFreeShipping} /> : ''}
-        
       </div>
 
+     </div>
     )
   }
 }

@@ -3,6 +3,7 @@
   display: flex;
   height: 600px;
   background: white;
+  z-index: 1;
 }
 .maindropdown {
   display: flex;
@@ -14,7 +15,7 @@
 .ulDropDown {
 
   list-style-type: none;
-  font-family: Adihausbold;
+  font-family: Adihausbold,Arial, Helvetica, sans-serif;
   width: 140px;
   font-size: 17px;
   margin: 30px 10px 10px 40px;

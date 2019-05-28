@@ -1,13 +1,14 @@
 *,
 *:before,
 *:after{
-  box-sizing: border-box;
   margin: 0;
-  font-family: AdineuePRO ,Arial, Helvetica, sans-serif;
+  /* font-family: AdineuePRO ,Arial, Helvetica, sans-serif; */
   letter-spacing: 0.5px;
 }
 .newspaperMain {
   height: 282px;
+  z-index: 1;
+  background-color: white;
 }
 .newspaperLine1 {
   margin: 0 auto;
@@ -95,10 +96,26 @@ form {
 }
 .checkboxLabel {
   display: flex;
-  line-height: 75px; 
   align-items: center;
+  top:20px;
   position: relative;
-  margin-bottom:0;
+  
+}
+.iconBox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  margin: 0 14px 0 0;
+}
+.iconBoxPassive {
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  border: 2px solid black;
+  color: white;
+  margin: 0 14px 0 0;
 }
 .inputCheckBox {
   height: 24px;
@@ -110,7 +127,7 @@ form {
   font-size: 1em;
   cursor: pointer;
 }
-.buttonCheckBox {
+.buttondeneme {
   width: 20px;
   height: 25px; 
   font-weight: bold;
@@ -119,12 +136,13 @@ form {
   color: black;
   cursor: pointer;
   margin-left: 5px;
+  text-align: center;
 }
 .radioMenu {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  padding-rigth: 20px;
+  padding-right: 20px;
   margin-bottom: 10px;
   justify-content: flex-end;
   width: 241px;

@@ -2,13 +2,17 @@ import React, { Component } from "react"
 import style from '../newsletter.css'
 
 class NewsletterSignUp extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
+    
   }
 
+  
 
 
   render() {
+    var result;
+    this.props.check ? result = style.iconBox : result= style.iconBoxPassive ;
     return (
       <div>
         <div className={style.newspaperMain}>
@@ -61,11 +65,13 @@ class NewsletterSignUp extends Component {
                 <div className={style.ageRow}>
                   <div className={style.ageRow1}>
                     <div>
-                      <label className={style.checkboxLabel}>
-                        <input type="checkbox" className={style.inputCheckBox} checked />
+                      <label className={style.checkboxLabel} >
+                        <svg className={result} onClick={() => this.props.changeCheckBox()}  viewBox="0 0 16 24" width="100%" height="100%">
+                          <path fill="none" stroke="currentColor" strokeMiterlimit="10"  strokeWidth="2" d="M1 13l4 4L15 7"></path>
+                        </svg>
                         <span className={style.spanCheckBox}>Yes, I am over 13 years old</span>
                         <span className={style.spanLabelInput}>*</span>
-                        <button className={style.buttonCheckBox}>?</button>
+                       <div className={style.buttondeneme} >?</div>
                       </label>
                     </div>
                   </div>
