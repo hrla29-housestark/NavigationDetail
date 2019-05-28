@@ -114,6 +114,9 @@ class App extends Component {
 
   render() {
     return (
+      <div>
+
+     
       <div className={style.header}>
         <div>
           <Top handleSignUp={this.handleSignUp}/>
@@ -131,9 +134,9 @@ class App extends Component {
         {this.rendering()}
         {this.renderSearch()}
         {this.state.shipping ?  <FreeShippingAndReturns handleFreeShipping={this.handleFreeShipping} /> : ''}
-        
       </div>
 
+     </div>
     )
   }
 }

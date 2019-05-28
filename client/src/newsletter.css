@@ -1,13 +1,14 @@
 *,
 *:before,
 *:after{
-  box-sizing: border-box;
   margin: 0;
-  font-family: AdineuePRO ,Arial, Helvetica, sans-serif;
+  /* font-family: AdineuePRO ,Arial, Helvetica, sans-serif; */
   letter-spacing: 0.5px;
 }
 .newspaperMain {
   height: 282px;
+  z-index: 1;
+  background-color: white;
 }
 .newspaperLine1 {
   margin: 0 auto;
