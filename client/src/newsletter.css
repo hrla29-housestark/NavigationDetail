@@ -2,7 +2,6 @@
 *:before,
 *:after{
   margin: 0;
-  /* font-family: AdineuePRO ,Arial, Helvetica, sans-serif; */
   letter-spacing: 0.5px;
 }
 .newspaperMain {
@@ -34,7 +33,7 @@
   font-size: 14px;
   
 }
-span img {
+.spanImg {
   width: 32px;
   height: 32px;
   margin-right: 8px;
@@ -209,13 +208,13 @@ span a {
 
 @font-face {
   font-family: 'AdineuePRO';
-  src: url('../assets/adineuePRO-Regular.woff2') format('truetype');
+  src: url('../assets/AdineuePRO-Regular.woff2') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: 'Adineuebold';
-  src: url('../assets/adineuePRO-Bold.woff2') format('truetype');
+  src: url('../assets/AdineuePRO-Bold.woff2') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -229,5 +228,5 @@ span a {
   font-family: 'Adihausbold';
   src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
 }

@@ -10,7 +10,7 @@ const Logo = (props) => {
     }
     return(
          <a className={result}>
-            <span className={style.only}>adidas</span>
+            <span id="logoText" className={style.only}>adidas</span>
          </a>
     )
 }

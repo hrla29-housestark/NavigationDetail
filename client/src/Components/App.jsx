@@ -57,17 +57,17 @@ class App extends Component {
   changeView(option){
     this.setState({
       view: option
-    },console.log(this.state.view))
+    })
   }
   handleSignUp(){
     this.setState({
       signUp: !this.state.signUp
-    },console.log("clicked"))
+    })
   }
   handleSearchChange(option){
     this.setState({
       q: option
-    },console.log(this.state.q))
+    })
   }
   renderSearch(){
     const { view , q } = this.state;
@@ -114,11 +114,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-
-     
+    
       <div className={style.header}>
-        <div>
+        <div id="signup">
           <Top handleSignUp={this.handleSignUp}/>
         </div>
         {this.state.signUp ? <NewsletterSignUp changeCheckBox={this.changeCheckBox} check={this.state.check}/> : ""}
@@ -136,7 +134,6 @@ class App extends Component {
         {this.state.shipping ?  <FreeShippingAndReturns handleFreeShipping={this.handleFreeShipping} /> : ''}
       </div>
 
-     </div>
     )
   }
 }

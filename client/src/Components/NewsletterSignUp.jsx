@@ -21,7 +21,7 @@ class NewsletterSignUp extends Component {
             <div className={style.subscribe}>
               <div className={style.innerSubscribe}>
                 <div className={style.rootSubscribe}>
-                  <span><img src="https://www.adidas.com/on/demandware.static/-/Sites-adidas-US-Library/default/dwb5c087f6/logo/mail.png" width="88" heigth="88" ></img></span>
+                  <span><img className={style.spanImg} src="https://www.adidas.com/on/demandware.static/-/Sites-adidas-US-Library/default/dwb5c087f6/logo/mail.png" width="88" heigth="88" ></img></span>
                   <div><span>SUBSCRIBE FOR EMAIL TO STAY UP TO DATE</span></div>
                 </div>
               </div>
@@ -30,7 +30,7 @@ class NewsletterSignUp extends Component {
             <div className={style.subscribe}>
               <div className={style.innerSubscribe}>
                 <div className={style.rootSubscribe}>
-                  <span><img src="https://www.adidas.com/on/demandware.static/-/Sites-adidas-US-Library/default/dw4984bd3d/logo/percent.png" width="88" heigth="88" ></img></span>
+                  <span ><img className={style.spanImg} src="https://www.adidas.com/on/demandware.static/-/Sites-adidas-US-Library/default/dw4984bd3d/logo/percent.png" width="88" heigth="88" ></img></span>
                   <div><span>SAVE 15% ON YOUR NEXT ORDER</span></div>
                 </div>
               </div>
@@ -39,7 +39,7 @@ class NewsletterSignUp extends Component {
             <div className={style.subscribe}>
               <div className={style.innerSubscribe}>
                 <div className={style.rootSubscribe}>
-                  <span><img src="https://www.adidas.com/on/demandware.static/-/Sites-adidas-US-Library/default/dw539f50c4/logo/star.png" width="88" heigth="88" ></img></span>
+                  <span><img className={style.spanImg} src="https://www.adidas.com/on/demandware.static/-/Sites-adidas-US-Library/default/dw539f50c4/logo/star.png" width="88" heigth="88" ></img></span>
                   <div><span>EXCLUSIVE OFFERS & PROMOTIONS</span></div>
                 </div>
               </div>
