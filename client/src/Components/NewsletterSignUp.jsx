@@ -48,7 +48,7 @@ class NewsletterSignUp extends Component {
           </div>
 
           <div className={style.part2}>
-            <form>
+            <form className={style.form}>
               <div className={style.emailInputSection}>
 
                 <div className={style.innerEmail}>

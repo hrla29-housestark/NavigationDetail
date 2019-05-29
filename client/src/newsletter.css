@@ -31,6 +31,7 @@
   width: 215px;
   height: 38px;
   font-size: 14px;
+  font-family: AdineuePro,Arial, Helvetica, sans-serif;
   
 }
 .spanImg {
@@ -42,10 +43,11 @@
 .part2 {
   height: 135px;
 }
-form {
+.form {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  font-family:AdineuePro,Arial, Helvetica, sans-serif;
 }
 .emailInputSection {
   padding-left: 20px;
@@ -68,6 +70,7 @@ form {
   left: 17px;
   top: 14px;
   letter-spacing: 1px;
+  font-family: AdineuePro,Arial, Helvetica, sans-serif;
 }
 .spanLabelInput {
   color: red;
