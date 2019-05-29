@@ -147,7 +147,7 @@ em .a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-image: url('https://files.slack.com/files-pri/T2SV1LBC6-FJPT9FUHH/svgexport-2.jpg');
+    background-image: url('https://s3-us-west-1.amazonaws.com/adidasnavigationbar/adidasLogo.jpg');
     background-repeat: no-repeat;
     background-position: 0;
     background-size: contain;
