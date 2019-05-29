@@ -1,7 +1,7 @@
 
 .mainmain {
   display: flex;
-  height: 600px;
+  height: 480px;
   background: white;
   z-index: 1;
 }
@@ -15,15 +15,16 @@
 .ulDropDown {
 
   list-style-type: none;
-  font-family: Adihausbold,Arial, Helvetica, sans-serif;
+  font-family: 'Adihausbold',Arial, Helvetica, sans-serif;
   width: 140px;
   font-size: 17px;
   margin: 30px 10px 10px 40px;
   padding: 0.5em;
+  font-size: bold;
 }
 .liDropDown {
-  font-family: AdineuePRO; 
-  font-weight: normal;
+  font-family: AdineuePRO,Arial, Helvetica, sans-serif;; 
+  font-size: 13px;
   margin: 10px 0 10px;
 }
 .seperator {
@@ -52,17 +53,18 @@ a:hover {
   text-decoration:underline;
 }
 .special {
-  font-family: Adihausbold;
+  font-family: 'Adihausbold';
+  font-weight: bold;
 }
 @font-face {
   font-family: 'AdineuePRO';
-  src: url('../assets/adineuePRO-Regular.woff2') format('truetype');
+  src: url('../assets/AdineuePRO-Regular.woff2') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: 'Adineuebold';
-  src: url('../assets/adineuePRO-Bold.woff2') format('truetype');
+  src: url('../assets/AdineuePRO-Bold.woff2') format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -76,5 +78,5 @@ a:hover {
   font-family: 'Adihausbold';
   src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
 }
