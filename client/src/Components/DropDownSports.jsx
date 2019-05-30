@@ -9,7 +9,7 @@ class DropDownSports extends Component{
 
     render(){
         return(
-          <div className={style.mainmain} onMouseEnter={() => this.props.changeView('sports')} onMouseLeave={() => this.props.changeView('')} >
+          <div id="sports" className={style.mainmain} onMouseEnter={() => this.props.changeView('sports')} onMouseLeave={() => this.props.changeView('')} >
 
            <div className={style.maindropdown} >
            

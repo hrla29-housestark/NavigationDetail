@@ -63,7 +63,7 @@ class NewsletterSignUp extends Component {
                   <div className={style.ageRow1}>
                     <div>
                       <label className={style.checkboxLabel} >
-                        <svg className={result} onClick={() => this.props.changeCheckBox()}  viewBox="0 0 16 24" width="100%" height="100%">
+                        <svg id ="result" className={result} onClick={() => this.props.changeCheckBox()}  viewBox="0 0 16 24" width="100%" height="100%">
                           <path fill="none" stroke="currentColor" strokeMiterlimit="10"  strokeWidth="2" d="M1 13l4 4L15 7"></path>
                         </svg>
                         <span className={style.spanCheckBox}>Yes, I am over 13 years old</span>

@@ -4,11 +4,11 @@ const FreeShippingAndReturns = (props) => {
 
     return (
         <div>
-            <button className={style.button} onClick={() => props.handleFreeShipping()}>asdasd</button>
-            <div className={style.fadeIn} onClick={() => props.handleFreeShipping()}>
+            <button id="buttonbutton" className={style.button} onClick={() => props.handleFreeShipping()}>asdasd</button>
+            <div id="fadeIn" className={style.fadeIn} onClick={() => props.handleFreeShipping()}>
                 <button className={style.fadeInCross}>
                     <svg viewBox="0 0 18 24" width="100%" height="100%">
-                        <path d="M17 4l-8 8 8 8M1 4l8 8-8 8" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></path>
+                        <path d="M17 4l-8 8 8 8M1 4l8 8-8 8" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="2"></path>
                     </svg>
                 </button>
                 <div className={style.model}><h5 className={style.h5Header}>FREE SHIPPING AND FREE RETURNS</h5>

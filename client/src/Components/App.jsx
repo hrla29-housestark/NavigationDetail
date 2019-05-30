@@ -41,7 +41,7 @@ class App extends Component {
     axios
       .get('/api/nav')
       .then(data => {
-        console.log(data.data);
+        console.log(data.data.slice(0,100));
         this.setState({
           products: data.data
         })

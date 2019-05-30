@@ -15,7 +15,7 @@ class Top extends Component {
           <div className={style.spacer}></div>
           <a className={style.customerinfo} href="#">ORDER TRACKER AND RETURNS</a>
           <div className={style.spacer}></div>
-          <em onClick={() => this.props.handleSignUp()}>
+          <em id="top" onClick={() => this.props.handleSignUp()}>
             <a className={style.newsletter} href="#" >NEWSLETTER SIGNUP</a>
           </em>
           <div className={style.loginspacer} ></div>
