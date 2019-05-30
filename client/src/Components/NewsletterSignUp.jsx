@@ -7,9 +7,6 @@ class NewsletterSignUp extends Component {
     
   }
 
-  
-
-
   render() {
     var result;
     this.props.check ? result = style.iconBox : result= style.iconBoxPassive ;
@@ -102,9 +99,9 @@ class NewsletterSignUp extends Component {
           <footer>
             <div>
               <span>Sign me up for the adidas emails, featuring exclusive offers, latest product info, news about upcoming events and more.Please see our</span>
-              <span><a href="#">Terms & Conditions</a></span>
+              <span><a href="#"> Terms & Conditions </a></span>
               <span>and</span>
-              <span><a href="#">Privacy & Policy</a></span>
+              <span><a href="#"> Privacy & Policy </a></span>
               <span>for more details. Selected products may be excluded from the 15% promotion.</span>
             </div>
 
