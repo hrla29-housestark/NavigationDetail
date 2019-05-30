@@ -25,7 +25,9 @@ class App extends Component {
       signUp: false,
       q:'',
       shipping: false,
-      check: true
+      check: true,
+      email: '',
+      emailSubmit: false,
     }
     this.changeView = this.changeView.bind(this);
     this.handleSignUp = this.handleSignUp.bind(this);
@@ -33,6 +35,8 @@ class App extends Component {
     this.fetchProducts = this.fetchProducts.bind(this);
     this.handleFreeShipping = this.handleFreeShipping.bind(this);
     this.changeCheckBox = this.changeCheckBox.bind(this);
+    this.changeEmail = this.changeEmail.bind(this);
+    this.submitEmail =this.submitEmail.bind(this);
   }
   componentDidMount(){
     this.fetchProducts();
@@ -41,13 +45,26 @@ class App extends Component {
     axios
       .get('/api/nav')
       .then(data => {
-        console.log(data.data.slice(0,100));
         this.setState({
           products: data.data
         })
       })
       .catch(err => console.log('Error getting data',err))
   }
+
+  submitEmail() {
+    this.setState({
+      emailSubmit: !this.state.emailSubmit
+    },console.log('Email is submited', this.state.emailSubmit))
+  }
+
+  changeEmail(event) {
+    // event.preventDefault();
+    this.setState({
+      email: event.target.value
+    },console.log(this.state.email))
+  }
+
   changeCheckBox() {
     this.setState({
       check: !this.state.check 
@@ -119,7 +136,7 @@ class App extends Component {
         <div id="signup">
           <Top handleSignUp={this.handleSignUp}/>
         </div>
-        {this.state.signUp ? <NewsletterSignUp changeCheckBox={this.changeCheckBox} check={this.state.check}/> : ""}
+        {this.state.signUp ? <NewsletterSignUp emailSubmit={this.state.emailSubmit} email={this.state.email} changeCheckBox={this.changeCheckBox} check={this.state.check} changeEmail={this.changeEmail} submitEmail={this.submitEmail}/> : ""}
         <div className={style.main}>
           <div className={style.inner}>
             <Logo signUp={this.state.signUp}/>

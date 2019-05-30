@@ -44,12 +44,13 @@ class NewsletterSignUp extends Component {
 
           </div>
 
+          {this.props.emailSubmit ? <h1 className={style.part2}> {this.props.email} Submitted </h1> :
           <div className={style.part2}>
             <form className={style.form}>
               <div className={style.emailInputSection}>
 
                 <div className={style.innerEmail}>
-                  <input type="email" className={style.inputEmail} />
+                  <input type="email" className={style.inputEmail} onChange={this.props.changeEmail} />
                   <label className={style.labelInput}>EMAIL
                       <span className={style.spanLabelInput}>*</span>
                   </label>
@@ -88,14 +89,14 @@ class NewsletterSignUp extends Component {
                 </div>
               </div>
               <div className={style.signup}>
-                <button type="button">Sign up
+                <button onClick={() => this.props.submitEmail()} type="button">Sign up
                   <svg className={style.icon} viewBox="0 0 24 24" width="100%" height="100%">
                     <path d="M17.59 7l5 5-5 5M0 12h22" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="1"></path>
                   </svg>
                 </button>
               </div>
             </form>
-          </div>
+          </div> }
           <footer>
             <div>
               <span>Sign me up for the adidas emails, featuring exclusive offers, latest product info, news about upcoming events and more.Please see our</span>
