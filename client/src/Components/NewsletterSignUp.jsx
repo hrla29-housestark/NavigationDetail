@@ -44,7 +44,13 @@ class NewsletterSignUp extends Component {
 
           </div>
 
-          {this.props.emailSubmit ? <h1 className={style.part2}> {this.props.email} Submitted </h1> :
+          {this.props.emailSubmit ? <div className={style.part2}>
+            <div className={style.emailMessage}>
+   <div class="gl-box__content"><h5 className={style.emailH5Header}>Thanks for signing up</h5><span className={style.emailSpanBottom}>You will receive a confirmation to {this.props.email}</span>
+     
+  </div>
+</div>
+          </div>  :
           <div className={style.part2}>
             <form className={style.form}>
               <div className={style.emailInputSection}>

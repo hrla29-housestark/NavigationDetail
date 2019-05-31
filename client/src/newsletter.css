@@ -59,6 +59,27 @@
   margin-bottom: 0;
   
 }
+.emailMessage {
+  
+  background-color: #ebedee;
+  border: 0 none transparent;
+  padding: 30px 20px 35px;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+.emailH5Header {
+font-size: 20px;
+letter-spacing: 1.5px;
+font-style: normal;
+font-weight: 600;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+.emailSpanBottom {
+  font-weight: 200px;
+  font-family: AdineuePro,Arial, Helvetica, sans-serif
+}
 .inputEmail {
   color: #000;
   border: 1.01565px solid #767677;
