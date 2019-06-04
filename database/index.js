@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-var db = mongoose.connect('mongodb://localhost/Product',{useNewUrlParser: true})
+var db = mongoose.connect(`mongodb+srv://root:${process.env.DATABASE_PASSWORD}@cluster0-vv3ep.mongodb.net/test?retryWrites=true&w=majority`,{useNewUrlParser: true})
 
 
 //Testing database connection
