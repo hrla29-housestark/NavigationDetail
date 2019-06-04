@@ -118,7 +118,7 @@
    .fullStars:before {
     -webkit-text-stroke: 1px black;
    } 
-   @font-face {
+   /* @font-face {
     font-family: 'AdineuePRO';
     src: url('../assets/AdineuePRO-Regular.woff2') format('truetype');
     font-style: normal;
@@ -141,4 +141,4 @@
     src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
     font-style: normal;
     font-weight: normal;
-  }
+  } */

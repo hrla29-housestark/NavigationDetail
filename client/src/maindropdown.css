@@ -56,7 +56,7 @@ a:hover {
   font-family: 'Adihausbold';
   font-weight: bold;
 }
-@font-face {
+/* @font-face {
   font-family: 'AdineuePRO';
   src: url('../assets/AdineuePRO-Regular.woff2') format('truetype');
   font-style: normal;
@@ -79,4 +79,4 @@ a:hover {
   src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
   font-style: normal;
   font-weight: normal;
-}
+} */
