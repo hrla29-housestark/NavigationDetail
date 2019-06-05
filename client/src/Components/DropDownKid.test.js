@@ -18,15 +18,18 @@ describe('testing App component', ()=> {
 	// 	expect(tree).toMatchSnapshot();
     // })
     it('should handle mouseEnter and mouseLeave', ()=> {
-		
-        let wrapper = shallow(<DropDownKid />)
-        let wrapperApp = shallow(<App />)
+		const changeView = (input) => {
+			return input;
+		}
+        let wrapper = shallow(<DropDownKid changeView={changeView}/>)
         
 		wrapper.find('#mainmain').simulate('mouseEnter')
-		expect(wrapperApp.state().view).toEqual('kids')
+		expect(wrapper.instance().props.changeView('kids')).toEqual('kids')
 
 		wrapper.find('#mainmain').simulate('mouseLeave')
-		expect(wrapperApp.state().view).toEqual('')
+		expect(wrapper.instance().props.changeView('')).toEqual('')
+
+		
 	})
 
 })

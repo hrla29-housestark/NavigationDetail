@@ -59,18 +59,41 @@
   margin-bottom: 0;
   
 }
+.emailMessage {
+  
+  background-color: #ebedee;
+  border: 0 none transparent;
+  padding: 30px 20px 35px;
+  display: flex;
+  justify-content: center;
+  color: #000;
+}
+.emailH5Header {
+font-size: 20px;
+letter-spacing: 1.5px;
+font-style: normal;
+font-weight: 600;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+.emailSpanBottom {
+  font-weight: 200px;
+  font-family: AdineuePro,Arial, Helvetica, sans-serif
+}
 .inputEmail {
   color: #000;
   border: 1.01565px solid #767677;
   width: 240px;
-  height:50px
+  height:50px;
+  font-size: 15px;
 }
 .labelInput{
   position: absolute;
-  left: 17px;
-  top: 14px;
+  left: 20px;
+  top: -8px;
   letter-spacing: 1px;
   font-family: AdineuePro,Arial, Helvetica, sans-serif;
+  background-color: white;
 }
 .spanLabelInput {
   color: red;
@@ -209,13 +232,13 @@ span a {
   color:black;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'AdineuePRO';
   src: url('../assets/AdineuePRO-Regular.woff2') format('truetype');
   font-style: normal;
   font-weight: normal;
-}
-@font-face {
+} */
+/* @font-face {
   font-family: 'Adineuebold';
   src: url('../assets/AdineuePRO-Bold.woff2') format('truetype');
   font-style: normal;
@@ -232,4 +255,4 @@ span a {
   src: url('../assets/AdihausDIN-Bold.woff2') format('truetype');
   font-style: normal;
   font-weight: normal;
-}
+} */

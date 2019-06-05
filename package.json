@@ -4,9 +4,10 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "nodemon server/index.js",
-    "build": "webpack -w",
+    "start": "node server/index.js",
+    "build": "webpack -p",
     "db:setup": "node database/seed.js",
+    "dev:server": "env-cmd nodemon server/index.js",
     "test": "jest",
     "test:w": "jest --watchAll",
     "test:c": "jest --coverage"
@@ -42,6 +43,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-jest": "^24.8.0",
     "css-loader": "^2.1.1",
+    "env-cmd": "^9.0.2",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.2",
     "identity-obj-proxy": "^3.0.0",

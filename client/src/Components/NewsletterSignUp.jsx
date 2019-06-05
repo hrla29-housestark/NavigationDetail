@@ -7,9 +7,6 @@ class NewsletterSignUp extends Component {
     
   }
 
-  
-
-
   render() {
     var result;
     this.props.check ? result = style.iconBox : result= style.iconBoxPassive ;
@@ -47,12 +44,19 @@ class NewsletterSignUp extends Component {
 
           </div>
 
+          {this.props.emailSubmit ? <div className={style.part2}>
+            <div className={style.emailMessage}>
+   <div class="gl-box__content"><h5 className={style.emailH5Header}>Thanks for signing up</h5><span className={style.emailSpanBottom}>You will receive a confirmation to {this.props.email}</span>
+     
+  </div>
+</div>
+          </div>  :
           <div className={style.part2}>
             <form className={style.form}>
               <div className={style.emailInputSection}>
 
                 <div className={style.innerEmail}>
-                  <input type="email" className={style.inputEmail} />
+                  <input type="email" className={style.inputEmail} onChange={this.props.changeEmail} />
                   <label className={style.labelInput}>EMAIL
                       <span className={style.spanLabelInput}>*</span>
                   </label>
@@ -66,7 +70,7 @@ class NewsletterSignUp extends Component {
                   <div className={style.ageRow1}>
                     <div>
                       <label className={style.checkboxLabel} >
-                        <svg className={result} onClick={() => this.props.changeCheckBox()}  viewBox="0 0 16 24" width="100%" height="100%">
+                        <svg id ="result" className={result} onClick={() => this.props.changeCheckBox()}  viewBox="0 0 16 24" width="100%" height="100%">
                           <path fill="none" stroke="currentColor" strokeMiterlimit="10"  strokeWidth="2" d="M1 13l4 4L15 7"></path>
                         </svg>
                         <span className={style.spanCheckBox}>Yes, I am over 13 years old</span>
@@ -91,20 +95,20 @@ class NewsletterSignUp extends Component {
                 </div>
               </div>
               <div className={style.signup}>
-                <button type="button">Sign up
+                <button onClick={() => this.props.submitEmail()} type="button">Sign up
                   <svg className={style.icon} viewBox="0 0 24 24" width="100%" height="100%">
                     <path d="M17.59 7l5 5-5 5M0 12h22" fill="none" stroke="currentColor" strokeMiterlimit="10" strokeWidth="1"></path>
                   </svg>
                 </button>
               </div>
             </form>
-          </div>
+          </div> }
           <footer>
             <div>
               <span>Sign me up for the adidas emails, featuring exclusive offers, latest product info, news about upcoming events and more.Please see our</span>
-              <span><a href="#">Terms & Conditions</a></span>
+              <span><a href="#"> Terms & Conditions </a></span>
               <span>and</span>
-              <span><a href="#">Privacy & Policy</a></span>
+              <span><a href="#"> Privacy & Policy </a></span>
               <span>for more details. Selected products may be excluded from the 15% promotion.</span>
             </div>
 

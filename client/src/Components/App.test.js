@@ -87,4 +87,11 @@ describe('testing App component', ()=> {
 		
 	})
 
+	it('should call renderSearch function', () => {
+		let wrapper = shallow(<App />)
+		expect(wrapper.state().view).toEqual('')
+		wrapper.instance().renderSearch()
+		expect(wrapper.state().view).toEqual('')
+	})
+
 })

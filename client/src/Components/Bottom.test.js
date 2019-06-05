@@ -18,14 +18,13 @@ describe('testing App component', ()=> {
 	// 	expect(tree).toMatchSnapshot();
 	// })
 	it('should change shipping onClick', () => {
-		let wrapperBottom = shallow(<Bottom />)
-		let wrapperApp = shallow(<App />)
+		const handleFreeShipping = () => {
+			return 'Clicked'
+		}
+		let wrapper = shallow(<Bottom handleFreeShipping={handleFreeShipping}/>)
 
-		wrapperBottom.find('#itemName').simulate('click')
-		expect(wrapperApp.state().shipping).toEqual(true)
-
-		wrapperBottom.find('#itemName').simulate('click')
-		expect(wrapperApp.state().shipping).toEqual(false)
+		wrapper.find('#itemName').simulate('click')
+		expect(wrapper.instance().props.handleFreeShipping()).toEqual('Clicked')
 
 	})
 

@@ -36,11 +36,11 @@ class Search extends Component {
     return (
       <div className={style.searchMain}>
         <div className={result}>
-          <div className={style.searchIcon} onClick={() => this.handleClick()} ><img src="https://i.ya-webdesign.com/images/png-search-2.png" width="19"></img></div>
-          <form className={style.formSearch} onClick={() => this.handleClick()}>
+          <div id="searchIcon" className={style.searchIcon} onClick={() => this.handleClick()} ><img src="https://i.ya-webdesign.com/images/png-search-2.png" width="19"></img></div>
+          <form id="formSearch" className={style.formSearch} onClick={() => this.handleClick()}>
             <input className={style.inputSearch} placeholder="search" value={this.state.search} onChange={this.handleChange}/>
           </form>
-          {this.state.search.length > 0 ? <div className={style.inputCross} onClick={() => {this.handleCross(); this.handleClick()}} >X</div> : <div className={style.inputCross}></div>}
+          {this.state.search.length > 0 ? <div id="inputCross" className={style.inputCross} onClick={() => {this.handleCross(); this.handleClick()}} >X</div> : <div className={style.inputCross}></div>}
         </div>
       </div>
     )
